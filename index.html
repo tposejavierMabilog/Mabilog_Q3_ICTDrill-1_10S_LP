@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 Mabilog Q3</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <link rel="stylesheet" href="main.py">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+         
+        }
+        h2 {
+            background: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+            color: goldenrod;
+        }
+        p {
+            color: goldenrod;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #520000;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       div.container {
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            text-align: center; 
+            border: 1px solid #fffafa;
+            border-radius: 10px;
+            background-color: #000000;
+        }
+
+        #average , #result {
+            font-weight: bold;
+            color: #ecf0ea;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Simple Average Calculator</h2>
+ 
+    <p>Score 1:</p>
+    <input type="text" name="" id="score1">
+
+    <p>Score 2:</p>
+    <input type="text" name="" id="score2">
+
+    <button py-click="compute_average">Compute</button>
+
+    <p>Average: <span id="average"></span></p>
+    <p>Passed? <span id="result"></span></p>
+
+    <script type="py" src="main.py"></script> 
+ </div>
+</body>
+</html>
